@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body>
+
+    <script>
+        // Outputs are as follows : 
+
+        console.log(1 + "2" + "2"); //--> 122
+        console.log(1 + +"2" + "2"); //--> 32
+        console.log(1 + -"1" + "2"); //--> 02
+        console.log(+"1" + "1" + "2"); //--> 112
+        console.log( "A" - "B" + "2"); //--> NaN2
+        console.log( "A" - "B" + 2); //--> NaN
+
+        // In the first example, 
+        // integer 1 is getiing concatenated to strings"2"
+
+        // In the second example, 
+        // 1 is added to 2 and then the string "2" is concatenated.
+
+        // In third one,
+        // 1 is subtracted from 1 and string "2" is concatenated.
+
+        // In 4th and 5th examples, we cannot subtract a string from another string,
+        // hence it gives the numeric datatype : NaN(Not a Number)
+    </script>
+</body>
+</html>
