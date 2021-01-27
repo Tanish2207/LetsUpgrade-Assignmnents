@@ -1,0 +1,27 @@
+There are 5 ways to access HTML elements in the DOM through JavaScript.
+--> document.getElementById()
+    This method returns directly the element.
+
+--> document.getElementsByClassName()
+    This method returns an array of the elements which match the class name.
+    If we want to select any individual element from this array, 
+    we have to specify its index i.e. 0 or 1 etc.
+
+--> document.getElementsByTagName()
+    This method searches for the given Tag's name in the HTML document.
+    It also returns an array same as that of Class Name.
+
+--> document.querySelector()
+    This method returns the direct element from the HTML code.
+    It requires us to give the class name with a (. dot) at the beginning
+    If its an ID, then a (# hash) at the beginning.
+    If there are many such selected elements, then this method selects only
+    the First element in the HTML code.
+
+--> document.querySelectorAll()
+    This method works the same way as Query Selector, but it returns an array of 
+    all the elements which match the given class or ID.
+    If we want to select a specific element, then we have to give Index.
+
+These were the 5 ways to fetch an element from the DOM, after this we can do any 
+operation with it.
